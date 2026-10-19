@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vinimesh's Portfolio</title>
+<meta name="description" content="Vinimesh Yadav's product management portfolio: case studies in product strategy, AI agents, operations and growth.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://binnonymous.github.io/vinimesh-portfolio/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231d1d1f'/%3E%3Ctext x='50%25' y='62%25' font-size='44' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EVY%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vinimesh's Portfolio">
+<meta property="og:description" content="Vinimesh Yadav's product management portfolio: case studies in product strategy, AI agents, operations and growth.">
+<meta property="og:url" content="https://binnonymous.github.io/vinimesh-portfolio/">
+<meta property="og:image" content="https://binnonymous.github.io/vinimesh-portfolio/photo-round.jpg">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: Apple-style single column, alternating white / soft-grey / dark bands, 1180px max width */
+:root{
+  --bg:#ffffff;--surface:#f5f5f7;--text:#1d1d1f;--muted:#6e6e73;--line:#d2d2d7;
+  --accent:#2864dc;--dark:#101114;--darktext:#f5f5f7;--darkmuted:#a1a1a6;--darkline:#48484d;
+  --navbg:rgba(255,255,255,.86);--slide:#ffffff;--body2:#4d4d52;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --max:1180px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b0b0d;--surface:#16171a;--text:#f5f5f7;--muted:#a1a1a6;--line:#2e2f33;
+  --accent:#6b9bff;--dark:#000000;--darktext:#f5f5f7;--darkmuted:#a1a1a6;--darkline:#3a3a3f;
+  --navbg:rgba(11,11,13,.82);--slide:#1f2024;--body2:#c7c7cc;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b0b0d;--surface:#16171a;--text:#f5f5f7;--muted:#a1a1a6;--line:#2e2f33;
+  --accent:#6b9bff;--dark:#000000;--darktext:#f5f5f7;--darkmuted:#a1a1a6;--darkline:#3a3a3f;
+  --navbg:rgba(11,11,13,.82);--slide:#1f2024;--body2:#c7c7cc;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--navbg)}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+button{font:inherit;color:inherit}
+.wrap{max-width:calc(var(--max) + 48px);margin-inline:auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+
+
+/* Nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navbg);backdrop-filter:saturate(1.6) blur(18px);-webkit-backdrop-filter:saturate(1.6) blur(18px);border-bottom:1px solid var(--line)}
+.navin{height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:650;letter-spacing:-.04em;font-size:17px}
+.brand span{color:var(--accent)}
+.navlinks{display:flex;align-items:center;gap:28px;font-size:14px;color:var(--muted)}
+.navlinks a[aria-current="page"]{color:var(--text)}
+.menubtn{display:none;background:none;border:0;font-size:22px;cursor:pointer;padding:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:11px 18px;font-size:14px;font-weight:600;border:1px solid var(--text);cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--text);color:var(--bg)}
+.btn.primary:hover{color:var(--bg)}
+.btn.secondary{background:transparent;border-color:var(--line);color:var(--text)}
+
+/* Type */
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:650;color:var(--muted)}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(42px,6.4vw,80px);letter-spacing:-.06em;line-height:1;font-weight:650;margin:20px 0 24px;max-width:820px;text-wrap:balance}
+h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.05em;line-height:1.08;font-weight:620;margin-bottom:18px;text-wrap:balance}
+h3{font-size:22px;letter-spacing:-.03em;line-height:1.2;margin-bottom:10px;text-wrap:balance}
+.lead{font-size:clamp(18px,2vw,21px);color:var(--muted);max-width:600px}
+.small{font-size:13px;color:var(--muted)}
+.textlink{color:var(--accent);font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:0;cursor:pointer}
+.textlink:hover{text-decoration:underline}
+
+/* Hero */
+.hero{padding-block:76px 88px}
+.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center}
+.heroGrid>*{min-width:0}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:28px}
+.heroPhoto{display:flex;flex-direction:column;align-items:center;text-align:center}
+.portrait{width:min(380px,100%);aspect-ratio:1/1;object-fit:cover;object-position:50% 50%;border-radius:50%;display:block;filter:saturate(.9);border:1px solid var(--line)}
+.heroNote{font-size:13px;color:var(--muted);margin-top:16px;margin-bottom:0}
+.now{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.now i{width:7px;height:7px;border-radius:50%;background:#2fa84f;display:block}
+
+/* Sections */
+.section{padding-block:80px}
+.section.soft{background:var(--surface)}
+.section.dark{background:var(--dark);color:var(--darktext)}
+.section.dark .eyebrow{color:var(--darkmuted)}
+.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}
+.sectionHead p{max-width:460px;color:var(--muted);margin:0}
+
+/* Filters */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filter{border:1px solid var(--line);background:transparent;padding:7px 13px;border-radius:999px;font-size:13px;cursor:pointer}
+.filter[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+
+/* Projects */
+.projectGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 28px}
+.libraryGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px}
+.project{border-top:1px solid var(--line);padding-top:18px;min-width:0;display:flex;flex-direction:column}
+.project .links{margin-top:auto}
+.seeAll{display:flex;justify-content:center;margin-top:44px}
+.project.featured{grid-column:1/-1;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;border:0;background:var(--bg);padding:28px;border-radius:6px}
+.project.featured>*{min-width:0}
+.project img,.caseVisual{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border:1px solid var(--line);background:var(--slide);display:block;border-radius:3px}
+.project:not(.featured) img{margin-bottom:20px}
+.project h3 a:hover{color:var(--accent)}
+.meta{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:10px}
+.project p{color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 16px}
+.tag{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:4px 9px;border-radius:4px}
+.links{display:flex;gap:18px;flex-wrap:wrap}
+.count{margin-top:26px}
+
+/* Principles */
+.fourGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:40px}
+.principle{border-top:1px solid var(--darkline);padding-top:18px}
+.principle p{font-size:15px;color:var(--darkmuted);margin:0}
+
+/* Experience */
+.experience{display:grid;grid-template-columns:1fr 2fr;gap:48px}
+.experience>*{min-width:0}
+.role{border-top:1px solid var(--line);padding-block:22px}
+.role:first-child{border-top:0;padding-top:0}
+.roleHead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.roleHead h3{margin:0}
+.date{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.role ul{margin:12px 0 0;padding-left:20px;color:var(--muted)}
+.role li{margin-bottom:8px}
+.role li b{color:var(--text);font-weight:600}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:32px}
+.stat{border-top:1px solid var(--line);padding-top:14px}
+.stat strong{display:block;font-size:clamp(28px,3.2vw,42px);letter-spacing:-.05em;line-height:1.1;font-variant-numeric:tabular-nums;margin-bottom:6px}
+.stat span{font-size:13px;color:var(--muted)}
+
+/* About */
+.aboutGrid{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px;align-items:start}
+.aboutGrid>*{min-width:0}
+.aboutGrid img{width:min(300px,100%);aspect-ratio:1/1;object-fit:cover;border-radius:50%;display:block;border:1px solid var(--line);margin-inline:auto}
+.aboutGrid p{color:var(--muted);max-width:640px}
+.skillGroup{margin-top:22px}
+.skillGroup .meta{margin-bottom:0}
+
+/* Closing */
+.closing{text-align:center;padding-block:96px}
+.closing h2{max-width:780px;margin:0 auto 18px}
+.closing p{color:var(--darkmuted);max-width:600px;margin:0 auto}
+.closing .actions{justify-content:center}
+.closing .btn.primary{background:var(--darktext);color:var(--dark);border-color:var(--darktext)}
+.closing .btn.secondary{color:var(--darktext);border-color:var(--darkline)}
+
+/* Contact page */
+.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contactGrid>*{min-width:0}
+.contactGrid p{color:var(--muted)}
+.contactItem{padding-block:20px;border-top:1px solid var(--line)}
+.contactItem:first-child{border-top:0;padding-top:0}
+.contactItem h3{margin:0;overflow-wrap:anywhere}
+.contactItem .small{margin:6px 0 0}
+.notice{min-height:20px;font-size:13px;color:var(--muted);margin-top:12px}
+
+/* Case study page */
+.pageIntro{padding-block:56px 40px}
+.back{margin-bottom:22px}
+.caseLayout{display:grid;grid-template-columns:200px minmax(0,760px);gap:64px;justify-content:space-between}
+.caseAside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px);align-self:start;font-size:13px;color:var(--muted);display:flex;flex-direction:column}
+.caseAside button{background:none;border:0;text-align:left;padding:6px 0;cursor:pointer;color:inherit}
+.caseAside button:hover{color:var(--accent)}
+.caseSection{padding-block:34px;border-top:1px solid var(--line)}
+.caseSection:first-child{border-top:0;padding-top:0}
+.caseSection .eyebrow{margin-bottom:12px}
+.caseSection p,.caseSection li{color:var(--body2)}
+.caseSection ul{padding-left:20px;margin:0}
+.caseSection li{margin-bottom:8px}
+.callout{padding:22px 24px;background:var(--surface);border-left:3px solid var(--accent);font-size:20px;letter-spacing:-.02em;line-height:1.45;color:var(--text)}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+.tableWrap{overflow-x:auto;margin-top:18px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:460px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+td{color:var(--body2)}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--text);font-weight:600}
+
+/* Slide viewer */
+.viewer{margin-top:20px}
+.stage{position:relative;background:var(--slide);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.stage img{width:100%;display:block;aspect-ratio:16/9;object-fit:contain}
+.viewerBar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap}
+.viewerBar .ctrls{display:flex;gap:8px}
+.ctrl{border:1px solid var(--line);background:var(--bg);border-radius:999px;width:40px;height:40px;cursor:pointer;font-size:16px}
+.ctrl:disabled{opacity:.35;cursor:default}
+.counter{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding-block:12px 4px}
+.thumb{flex:0 0 112px;padding:0;border:2px solid transparent;border-radius:4px;background:var(--slide);cursor:pointer;overflow:hidden}
+.thumb img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;object-position:top}
+.thumb[aria-current="true"]{border-color:var(--accent)}
+.resumeImg{width:100%;max-width:850px;border:1px solid var(--line);display:block;margin-top:28px;background:#fff}
+
+/* Footer */
+.footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:13px}
+.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer strong{color:var(--text)}
+
+@media (max-width:860px){
+  .heroGrid,.project.featured,.experience,.aboutGrid,.caseLayout,.contactGrid{grid-template-columns:1fr}
+  .heroGrid{gap:36px}
+  .heroPhoto{order:-1}
+  .portrait{width:min(260px,70%)}
+  .fourGrid,.stats,.libraryGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sectionHead{flex-direction:column;align-items:start}
+  .project.featured{padding:20px}
+  .aboutGrid img{width:min(220px,60%);margin-inline:0}
+  .caseAside{position:static;flex-direction:row;flex-wrap:wrap;gap:4px 16px}
+  .caseLayout{gap:28px}
+}
+@media (max-width:640px){
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .navin{height:58px}
+  .menubtn{display:block}
+  .navcta{display:none}
+  .navlinks{display:none;position:absolute;top:58px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:12px max(16px,env(safe-area-inset-right,0px)) 12px max(16px,env(safe-area-inset-left,0px));flex-direction:column;align-items:stretch;gap:0}
+  .navlinks.open{display:flex}
+  .navlinks a{padding:12px 4px}
+  .hero{padding-block:44px 56px}
+  .section{padding-block:56px}
+  .projectGrid,.libraryGrid{grid-template-columns:1fr}
+  .fourGrid{grid-template-columns:1fr;gap:20px}
+  .actions .btn{flex:1 1 auto;white-space:nowrap}
+  .callout{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#home">Vinimesh Yadav<span>.</span></a>
+    <button class="menubtn" id="menuBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+    <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#get-in-touch">Contact</a>
+    </nav>
+    <a class="btn primary navcta" href="#get-in-touch">Discuss an opportunity ↗</a>
+  </div>
+</header>
+
+<!-- ===== Home view ===== -->
+<main id="homeView">
+  <section class="hero" id="home">
+    <div class="wrap heroGrid">
+      <div>
+        <span class="now"><i></i>Product Management Intern at CUBE</span>
+        <h1>I turn product data into decisions teams can act on.</h1>
+        <p class="lead">I'm Vinimesh Yadav, a dual-degree student at BITS Pilani (M.Sc. Economics and B.E. Civil). I work on product analytics, growth and AI-driven automation.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">Explore my work ↗</a>
+          <a class="btn secondary" href="#resume">View resume ↗</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/vinimesh-yadav" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="heroPhoto">
+        <img class="portrait" src="photo-round.jpg" alt="Vinimesh Yadav on the BITS Pilani campus">
+        <p class="heroNote">BITS Pilani · Graduating May 2027</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="work">
+    <div class="wrap">
+      <div class="sectionHead">
+        <div>
+          <div class="eyebrow">Selected work</div>
+          <h2>Case studies, from problem to plan.</h2>
+        </div>
+      </div>
+      <div class="projectGrid" id="projectGrid"></div>
+      <div class="seeAll"><a class="btn secondary" href="#all-work">See all work (6) →</a></div>
+    </div>
+  </section>
+
+  <section class="section dark" id="approach">
+    <div class="wrap">
+      <div class="eyebrow">How I work</div>
+      <h2>Read the data.<br>Then decide.</h2>
+      <div class="fourGrid">
+        <div class="principle"><h3>01. Start with the numbers</h3><p>Find where users drop off or slow down in the funnel before I suggest any feature.</p></div>
+        <div class="principle"><h3>02. Find the root cause</h3><p>Separate the symptom from the cause. On Mars, the issue was market saturation, not the product.</p></div>
+        <div class="principle"><h3>03. Prioritise by impact</h3><p>Rank options by user value, business value, effort and risk. Fix the expensive problems first.</p></div>
+        <div class="principle"><h3>04. Automate the repeat work</h3><p>Use Claude agents, MCPs and n8n so that the team spends time on decisions, not on reports.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap experience">
+      <div>
+        <div class="eyebrow">Experience</div>
+        <h2>Two years at CUBE, close to the product.</h2>
+        <p class="date">May 2024 – present</p>
+      </div>
+      <div>
+        <div class="role">
+          <div class="roleHead"><h3>Product Management Intern · CUBE</h3><span class="date">May 2026 – Present</span></div>
+          <ul>
+            <li>Found trends in product data that improved onboarding conversion by <b>15%</b>.</li>
+            <li>Automated recurring product analytics workflows with Claude Skills, Agents and MCPs.</li>
+            <li>Built SQL, Tableau and Vercel dashboards to track performance.</li>
+          </ul>
+        </div>
+        <div class="role">
+          <div class="roleHead"><h3>Founder's Office Intern · CUBE</h3><span class="date">Oct 2024 – Oct 2025</span></div>
+          <ul>
+            <li>Used Claude Skills to summarise tender data and automate filings, saving <b>8–10 hours</b> per tender each week.</li>
+            <li>Ran Excel and CRM analysis to support the founder's key decisions.</li>
+            <li>Ran email campaigns that increased user engagement by about <b>30%</b>.</li>
+          </ul>
+        </div>
+        <div class="role">
+          <div class="roleHead"><h3>Growth and Strategy Intern · Techture Structures</h3><span class="date">May 2024 – Jul 2024</span></div>
+          <ul>
+            <li>Analysed acquisition, retention and funnel metrics.</li>
+            <li>Managed CRM workflows and email campaigns.</li>
+            <li>Did market research and competitor analysis for partnerships.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="eyebrow">Selected results</div>
+      <h2>Outcomes, in numbers.</h2>
+      <div class="stats">
+        <div class="stat"><strong>+15%</strong><span>Onboarding conversion · CUBE</span></div>
+        <div class="stat"><strong>8–10 hrs</strong><span>Saved per tender each week · CUBE</span></div>
+        <div class="stat"><strong>~30%</strong><span>Lift in user engagement · CUBE</span></div>
+        <div class="stat"><strong>190K+</strong><span>Followers built · @behind_the_voices_ · 14M+ reach</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap aboutGrid">
+      <img src="photo-round.jpg" alt="Vinimesh Yadav on the BITS Pilani campus">
+      <div>
+        <div class="eyebrow">About</div>
+        <h2>Economics training. A builder's habits.</h2>
+        <p class="lead">I study Economics and Civil Engineering at BITS Pilani. Economics taught me to think about incentives and trade-offs. Engineering taught me to think in systems.</p>
+        <p>I also founded @behind_the_voices_ and grew it to 190K+ followers with daily content. That work taught me to read audience feedback fast and change course. I bring the same habit to product work.</p>
+        <div class="skillGroup">
+          <div class="meta">Product &amp; analytics</div>
+          <div class="tags"><span class="tag">Product strategy</span><span class="tag">User research</span><span class="tag">Roadmapping</span><span class="tag">KPI definition</span><span class="tag">Funnel analysis</span><span class="tag">A/B testing</span></div>
+        </div>
+        <div class="skillGroup">
+          <div class="meta">Tools</div>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Tableau</span><span class="tag">Power BI</span><span class="tag">Google Analytics</span><span class="tag">Excel</span><span class="tag">n8n</span><span class="tag">Claude agents &amp; MCP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark closing" id="contact">
+    <div class="wrap">
+      <h2>Looking for a PM who works from the data?</h2>
+      <p>I'm open to Product Management roles and internships where analytics, user insight and automation matter.</p>
+      <div class="actions">
+        <a class="btn primary" href="#get-in-touch">Get in touch ↗</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/vinimesh-yadav" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== All work view ===== -->
+<main id="allWorkView" hidden>
+  <section class="pageIntro">
+    <div class="wrap">
+      <a class="textlink back" href="#work">← Back to home</a>
+      <div class="eyebrow">Project library · 6 pieces</div>
+      <h1>Work that shows the reasoning.</h1>
+      <p class="lead">Product cases, a competition entry and a customer review. Each project has a full case study and the original deck.</p>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects" style="margin-top:28px">
+        <button class="filter" data-filter="all" aria-pressed="true">All work</button>
+        <button class="filter" data-filter="strategy" aria-pressed="false">Product strategy</button>
+        <button class="filter" data-filter="ai" aria-pressed="false">AI &amp; agents</button>
+        <button class="filter" data-filter="ops" aria-pressed="false">Operations</button>
+        <button class="filter" data-filter="cs" aria-pressed="false">Customer success</button>
+      </div>
+      <p class="small" id="resultCount" aria-live="polite">Showing 6 of 6 projects</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:8px">
+    <div class="wrap"><div class="projectGrid libraryGrid" id="libraryGrid"></div></div>
+  </section>
+</main>
+
+<!-- ===== Contact view ===== -->
+<main id="contactView" hidden>
+  <section class="pageIntro">
+    <div class="wrap">
+      <a class="textlink back" href="#home">← Back to home</a>
+      <div class="eyebrow">Contact</div>
+      <h1>Let's talk about product.</h1>
+      <p class="lead">For Product Management roles, internships or project discussions, email is the most direct route.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:16px">
+    <div class="wrap contactGrid">
+      <div>
+        <h2>Get in touch.</h2>
+        <p>A short note with the role, the team or the problem is enough to start.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:vinimesh24@gmail.com?subject=Product%20Management%20Opportunity">Email me ↗</a>
+          <button class="btn secondary" id="copyEmail" type="button">Copy email</button>
+        </div>
+        <p class="notice" id="copyNotice" aria-live="polite"></p>
+      </div>
+      <div>
+        <div class="contactItem"><div class="meta">Email</div><h3 id="emailText">vinimesh24@gmail.com</h3></div>
+        <div class="contactItem"><div class="meta">Alternate email</div><h3>ny7595771@gmail.com</h3></div>
+        <div class="contactItem"><div class="meta">LinkedIn</div><a href="https://www.linkedin.com/in/vinimesh-yadav" target="_blank" rel="noopener noreferrer"><h3>Connect on LinkedIn ↗</h3></a><p class="small">Professional profile and direct messages.</p></div>
+        <div class="contactItem"><div class="meta">Current focus</div><h3>Product Management roles</h3><p class="small">Product analytics · Growth · AI automation · Strategy</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Case study view (filled from PROJECTS) ===== -->
+<main id="caseView" hidden></main>
+
+<!-- ===== Resume view ===== -->
+<main id="resumeView" hidden>
+  <section class="pageIntro">
+    <div class="wrap">
+      <a class="textlink back" href="#home">← Back to home</a>
+      <div class="eyebrow">Resume</div>
+      <h1>Experience, projects and skills.</h1>
+      <p class="lead">My one-page resume. Open the PDF to download or print it.</p>
+      <div class="actions">
+        <a class="btn primary" href="decks/vinimesh-yadav-resume.pdf" target="_blank" rel="noopener noreferrer">Open resume PDF ↗</a>
+        <a class="btn secondary" href="#get-in-touch">Get in touch</a>
+      </div>
+      <img class="resumeImg" src="slides/resume-01.jpg" alt="Vinimesh Yadav resume, page 1" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footerin">
+    <div><strong>Vinimesh Yadav · Product Portfolio</strong><div>Product management · Analytics · Growth</div></div>
+    <div><a href="#get-in-touch">vinimesh24@gmail.com</a> · <a href="https://www.linkedin.com/in/vinimesh-yadav" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+    <div>© 2026 Vinimesh Yadav</div>
+  </div>
+</footer>
+
+<script>
+var PROJECTS=[
+{
+  slug:'instacart',featured:true,cat:'ai strategy',slides:11,
+  title:'Instacart: Agent Readiness',
+  meta:'Independent case study · 11 slides',
+  short:"Customers will soon let their own AI assistants do the weekly shop. I defined what Instacart needs so that an agent's order still matches the customer's preferences, permissions and budget.",
+  tags:['AI agents','Trust & permissions','Metrics'],
+  overview:"A product case on preparing Instacart for shopping done by outside AI assistants. The deck answers six questions: why groceries, what to build for a board demo, which API to build first, how to debug a quantity error, how to cap autonomous orders, and how to manage launch risk.",
+  problem:"Within 12 months, AI agents may shop at scale, often with no person checking each step. Instacart must serve people and the assistants that act for them. Three things must hold. The same product and quantity must mean the same thing on every assistant. Routine orders must stay inside the customer's approved choices and budget. Replacements must still fit what the customer approved when stock and prices change.",
+  approach:[
+    "Chose groceries as the first category. Frequent, varied orders give evidence fast.",
+    "Board demo in six weeks: build a focused prototype and accept some temporary code.",
+    "Two engineers, four weeks: compared a checkout API with a substitution-preference API.",
+    "Traced a quantity bug (\"2 units\" vs \"two 1 kg packs\") through each step of the agent workflow.",
+    "Set monthly order caps from shopping history, with customer limits that a model cannot override.",
+    "Wrote a risk framework: find risks early, limit the release, prove pause and recovery."
+  ],
+  insight:"Delegation fails on meaning and permission, not on the shopping. The agent must read the customer's rules before it is allowed to buy.",
+  solution:"Make substitution preferences readable by agents first. The agent prepares the basket and the customer completes checkout in Instacart. Start each customer at half their usual monthly orders, with a maximum of 5. With no history, confirm every purchase in the first 30 days.",
+  tableIn:'solution',
+  table:{head:['Usual orders / month','Starting cap'],rows:[['No history or no opt-in','0 (confirm each)'],['1–2','1'],['3–4','1–2'],['5–9','2–4'],['10+','5']]},
+  measure:["Corrections per repeat order, and voluntary repeat use","Ready-basket abandonment at checkout","Intended-basket match across different agents","Unintended orders as a share of all autonomous orders, and money lost"],
+  measureNote:"These are proposed measures. The case gives no measured results.",
+  tradeoff:"Preferences first keeps a manual checkout step for now. Starting caps add confirmations that some users will find slow. Some demo code may be thrown away."
+},
+{
+  slug:'brandstorm',cat:'strategy',slides:4,
+  title:'YSL Atelier: L\'Oréal Brandstorm 2026',
+  meta:'L\'Oréal Brandstorm 2026 · Team entry · 4 slides',
+  short:"A connected home device that blends a personalised, refillable YSL perfume from a mood chosen in the app. A team entry from BITS Pilani.",
+  tags:['Beauty tech','Unit economics','Go-to-market'],
+  overview:"Team Medellin's entry for L'Oréal Brandstorm 2026, made with Tanay Saxena and Dhruv Maliwal. The question: how can luxury fragrance move from static perfumes to dynamic, on-demand experiences?",
+  problem:"Fragrance is personal, but perfumes are static. People own 3–5 perfumes for different moods and occasions. Luxury fragrance is sold as a product, not as an experience, and choosing one can overwhelm buyers. The industry depends on fixed formulas and bottle sales.",
+  approach:[
+    "Put the problem, the industry challenges and the market data side by side.",
+    "Designed a five-step user journey: connect, discover mood, AI recommendation, refine, blend.",
+    "Built D2C and retail unit economics down to contribution margin after CAC.",
+    "Planned a phased go-to-market over six years.",
+    "Set customer, financial, marketing and operations metrics."
+  ],
+  insight:"The opportunity is a shift from bottle-based consumption to experience-based personalisation, without losing the perfumer's craft.",
+  solution:"Atelier: a connected home device paired with the YSL Beauty app. The user picks a mood from five curated note families. The app suggests a perfumer-crafted profile, the user adjusts the intensity, and Atelier blends a fresh 50-spray perfume. One refill bundle gives 5–6 creations. Launch in YSL flagship stores (Paris, NYC, Dubai, Shanghai) with an in-store Atelier Experience Bar. Then add a cartridge subscription and expand to other L'Oréal Luxe brands.",
+  tableIn:'solution',
+  table:{head:['Per customer','D2C','Retail'],rows:[['Revenue','$500','$275'],['Cost of goods','$83','$83'],['CM1 (revenue − COGS)','$417','$192'],['Acquisition cost (CAC)','$100','$50'],['CM2 (CM1 − CAC)','$317','$142']]},
+  measure:["12-month retention: 75% of device owners buy at least one refill bundle","2 refill bundles per active user each year, and an NPS of +60","3% conversion on campaign landing pages, with 30% of device sales from influencers","95% or more orders shipped within 48 hours"],
+  measureNote:"All are targets in the team's plan, not measured results.",
+  tradeoff:"A $500 device is a high entry price, so the plan starts with luxury buyers in flagship stores. Retail earns less than half the D2C margin per customer ($142 vs $317 CM2), so D2C leads at launch."
+},
+{
+  slug:'skillspark',cat:'strategy ai',slides:12,
+  title:'SkillSpark: Learn Anything in 10 Minutes',
+  meta:'Zupee case · Apr 2026 · 12 slides',
+  short:"A gamified micro-learning app for India's 900M+ mobile-first learners. AI learning paths, streaks and social challenges, with a freemium model.",
+  tags:['0 to 1','Gamification','Monetisation'],
+  overview:"A 0-to-1 product concept for the Zupee case. SkillSpark breaks any skill into 10-minute levels and uses game mechanics to make learning a daily habit.",
+  problem:"Learning has a starting problem, not a content problem. Short-video habits have shrunk attention spans. Courses feel like a big commitment. YouTube is passive and ChatGPT has no structure. None of them gives a feeling of progress right away.",
+  approach:[
+    "Framed the core problem as friction to start, not lack of motivation.",
+    "Sized the market: 900M+ Indian internet users, mostly mobile-first.",
+    "Used India's gaming culture (BGMI, Free Fire, fantasy sports) as a behaviour signal.",
+    "Designed core features, a gamification layer and a social layer.",
+    "Defined a design language, a monetisation model and the main risks."
+  ],
+  insight:"People do not want to \"learn a skill\". They want to feel progress, fast. When the first step is small, they start, and they keep going.",
+  solution:"AI breaks any topic into 10-minute levels. An AI companion guides and quizzes the learner. A quests engine picks the next step, so the learner never has to decide. XP, Skill Coins, streaks and unlockables reward progress. Squads and weekly leaderboards add social competition.",
+  measure:["Free core tier as the main growth engine","Premium learning paths and deeper AI personalisation","A Skill Coins marketplace for rewards and brand merchandise","Brand-sponsored learning tracks that also build hiring pipelines"],
+  measureNote:"The deck defines the business model. It does not set numeric targets.",
+  tradeoff:"Four risks: users try it once and do not return; 10-minute lessons look shallow; rewards get repetitive; and the app looks like \"Duolingo\" or a \"ChatGPT wrapper\". Responses: habit loops and nudges, deeper levels with real projects, seasonal challenges, and sharp positioning."
+},
+{
+  slug:'mars-tv',cat:'strategy',slides:16,
+  title:'Is Mars TV Dead? Samsung on Mars',
+  meta:'InMobi case · Dec 2025 · 16 slides',
+  short:"Samsung TV sales on Mars fell after the first wave of colonists. I moved the TV from a one-time purchase to a Mars-native platform that earns recurring revenue.",
+  tags:['Root-cause analysis','Platform strategy','Roadmap'],
+  overview:"A strategy case for InMobi. Find why Samsung smart TV sales are falling on Mars, compare options, and propose a long-term, Mars-native fix with a roadmap, metrics and risks.",
+  problem:"Samsung entered the Mars TV market in 2045. Sales grew for about 10 years, then fell slowly from 2055. The fall is not seasonal, not a supply issue, and not an execution failure. It is structural. A small, capped population already owns TVs, and devices last a long time in harsh conditions.",
+  approach:[
+    "Listed what makes Mars different: scarce energy, long device life, isolation, no living-room culture.",
+    "Ran a MECE root-cause analysis across market, product, behaviour and business model.",
+    "Scored four options on Mars fit, scale, long-term revenue, differentiation and feasibility.",
+    "Built a six-phase roadmap, seven KPIs and a risk register."
+  ],
+  insight:"Mars is not a growth-by-volume market. Growth must come from usage depth and relevance, not user count.",
+  solution:"Turn the TV into essential Mars infrastructure. Build Mars OS with energy management, habitat control, wellness tools and delay-tolerant messaging to Earth. Open an app ecosystem and add recurring revenue through subscriptions, a marketplace and hardware-as-a-service. Roll out from Mars OS Lite (months 3–9) to a habitat standard (month 48+).",
+  tableIn:'solution',
+  table:{head:['Option','Main weakness','Score'],rows:[['Price cuts & promotions','Margin loss; does not fix saturation','2/5'],['Institutional sales','Capped upside; no recurring revenue','3/5'],['Hardware innovation only','Easy to copy; still needs replacement cycles','2/5'],['OS + ecosystem','High build complexity','5/5']]},
+  measure:["Daily interaction frequency beyond entertainment","Share of users on 2 or more Mars OS modules","Switching hesitation and institutional standardisation","Revenue mix shift from hardware to services"],
+  measureNote:"No precise targets. Mars has no historical benchmarks, so the plan tracks trends from a Month 0 baseline.",
+  tradeoff:"The OS is complex to build, users may resist a new paradigm, and competitors can copy surface features. Responses: a modular OS, opt-in rollout through OS Lite, and differentiation through the ecosystem rather than features."
+},
+{
+  slug:'problem-choice',cat:'ops strategy',slides:8,
+  title:"MoveInSync: Choosing the Quarter's Problem",
+  meta:'MoveInSync case · Jan 2026 · 8 slides',
+  short:"Three problems, one squad, one quarter. I chose to stabilise core operations first, because the routing system now runs on manual fixes.",
+  tags:['Prioritisation','Operations','Metrics'],
+  overview:"A prioritisation case for MoveInSync. Pick one of three problems for a single squad this quarter: fragile core operations, driver fatigue and safety, or a new Heavy Asset Movement product.",
+  problem:"Ops coordinators override system-generated routes every day. Ops cost per trip is up about 18% quarter on quarter. Coordinators report fatigue, and manpower-reduction goals are going backwards. People are hiding the system's failures, and that does not scale.",
+  approach:[
+    "Compared the three problems on root cause, risk and timing.",
+    "Treated driver fatigue as a downstream effect of bad routing and manual fixes.",
+    "Deferred Heavy Asset Movement, because a growth bet needs a stable base.",
+    "Defined three metrics: trust in automation, cost and team load.",
+    "Planned the squad's work in three steps: diagnose, fix, pilot."
+  ],
+  insight:"When people fix the system every day, the system is already failing. Fix the core first, and driver overwork falls with it.",
+  solution:"Spend the quarter on stabilising core operations. Analyse override data to find the top 2–3 causes, and shadow coordinators. Improve the routing rules for those causes and show why each route was made. Pilot the fixes on busy high-volume routes, then iterate on ops feedback.",
+  tableIn:'solution',
+  table:{head:['Problem','Decision'],rows:[['Core operations are fragile','Chosen: the root cause of cost, fatigue and risk'],['Driver fatigue and safety','Downstream: improves when routing is fixed'],['Heavy Asset Movement (new product)','Deferred: needs a stable base first']]},
+  measure:["Manual overrides per week, by route type and time of day","Ops cost per trip, against the baseline","Average interventions per shift per coordinator"],
+  measureNote:"The deck does not set numeric targets. It assumes the 18% cost rise comes mainly from overrides and reactive work, not from fuel or vendor prices.",
+  tradeoff:"Driver safety risk stays high in the short term, and the new product waits. Safeguards: explicit safety thresholds, a weekly review of driver hours and incidents, and a 30-day pivot rule. If overrides do not fall, or safety signals get worse, the decision is reviewed."
+},
+{
+  slug:'workinsync',cat:'cs ops',slides:6,
+  title:'WorkInSync: Quarterly Business Review',
+  meta:'WorkInSync · Q3 FY26 QBR · 6 slides',
+  short:"A QBR for 2,000 users, 300 meeting rooms and 5 offices. I benchmarked room use, no-shows and visitor check-in against targets, then ranked fixes by impact.",
+  tags:['Customer success','Benchmarking','Prioritisation'],
+  overview:"A quarterly business review for a WorkInSync account with 2,000 users in Bengaluru, Pune, New York, Austin and London. Scope: meeting rooms and visitor management, July to September 2026.",
+  problem:"Room utilisation is 61% against a 75% target. 18% of bookings are no-shows. 34% of bookings use the wrong room size. Visitor check-in takes 6.5 minutes against a 2-minute target. London keeps visitor data past the GDPR window.",
+  approach:[
+    "Used four data sets: booking logs, kiosk logs, helpdesk tickets and admin interviews.",
+    "Split the analysis into meeting rooms and visitor management.",
+    "Benchmarked each office against WorkInSync's standard targets.",
+    "Ranked issues by operational impact and ease of fix."
+  ],
+  insight:"The account has enough rooms. They are badly distributed. About 110 rooms sit idle each day while small rooms run at 89%. The account average hides local shortages.",
+  solution:"Fix the fast, high-impact items first: auto-release no-show rooms and set London's GDPR auto-purge (2 weeks each), then repair SSO and calendar sync in Austin and London (4 weeks). Next, add room-size suggestions at booking (6 weeks), rebalance capacity in Austin and Pune, and roll out kiosks in Pune and London (8 weeks).",
+  table:{head:['KPI','Q3 baseline','Q4 target'],rows:[['Room utilisation','61%','75%+'],['No-show rate','18%','Under 8%'],['Room-size mismatch','34%','Under 15%'],['Visitor check-in time','6.5 min','Under 2 min'],['Pre-registration','47%','70%+']]},
+  measureNote:"Q4 values are targets for the next quarter.",
+  tradeoff:"Quick policy and configuration fixes go before physical changes such as room conversions and new kiosks. Auto-release uses a 5–10 minute grace period so that late teams do not lose their room."
+}];
+
+(function(){
+  var esc=function(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');};
+  var slide=function(p,n){return 'slides/'+p.slug+'-'+String(n).padStart(2,'0')+'.jpg';};
+  var tags=function(list){return list.map(function(t){return '<span class="tag">'+esc(t)+'</span>';}).join('');};
+
+  // Project cards: two picks side by side on home, all of them in the library
+  function card(p,featured){
+    var img='<a href="#'+p.slug+'" aria-label="Read the '+esc(p.title)+' case study"><img src="'+slide(p,1)+'" alt="Opening slide of the '+esc(p.title)+' deck" loading="lazy"></a>';
+    var body='<div class="meta">'+(featured?'Featured · ':'')+esc(p.meta)+'</div><h3><a href="#'+p.slug+'">'+esc(p.title)+'</a></h3><p>'+esc(p.short)+'</p><div class="tags">'+tags(p.tags)+'</div><div class="links"><a class="textlink" href="#'+p.slug+'">Read case study ↗</a><a class="textlink" href="decks/'+p.slug+'.pdf" target="_blank" rel="noopener noreferrer">Original deck (PDF) ↗</a></div>';
+    return '<article class="project'+(featured?' featured':'')+'" data-cat="'+p.cat+'">'+(featured?img+'<div>'+body+'</div>':img+body)+'</article>';
+  }
+  var HOME=['instacart','mars-tv'];
+  document.getElementById('projectGrid').innerHTML=HOME.map(function(s){return card(PROJECTS.filter(function(p){return p.slug===s;})[0],false);}).join('');
+  document.getElementById('libraryGrid').innerHTML=PROJECTS.map(function(p){return card(p,false);}).join('');
+
+  // Case study page
+  var SECTIONS=[['overview','Overview'],['problem','Problem'],['approach','Approach'],['insight','Insight'],['solution','Recommendation'],['measure','Measurement'],['tradeoff','Trade-offs'],['deck','Slides']];
+  function caseHTML(p){
+    var list=function(a){return '<ul>'+a.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>';};
+    var table=function(t){return '<div class="tableWrap"><table><thead><tr>'+t.head.map(function(h){return '<th>'+esc(h)+'</th>';}).join('')+'</tr></thead><tbody>'+t.rows.map(function(r){return '<tr>'+r.map(function(c,i){return '<td'+(i>0&&c.length<16?' class="num"':'')+'>'+esc(c)+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table></div>';};
+    var thumbs='';for(var i=1;i<=p.slides;i++){thumbs+='<button class="thumb" data-n="'+i+'" aria-label="Slide '+i+'"><img src="'+slide(p,i)+'" alt="" loading="lazy"></button>';}
+    var measureBody=(p.slug==='skillspark'?'<h2>How it makes money</h2>':'<h2>What success looks like</h2>')+(p.measure?list(p.measure):'')+(p.table&&p.tableIn!=='solution'?table(p.table):'')+'<p class="note">'+esc(p.measureNote)+'</p>';
+    var solutionBody='<h2>The recommendation</h2><p>'+esc(p.solution)+'</p>'+(p.table&&p.tableIn==='solution'?table(p.table):'');
+    return '<section class="pageIntro"><div class="wrap">'+
+      '<a class="textlink back" href="#work">← All work</a>'+
+      '<div class="eyebrow">'+esc(p.meta)+'</div><h1>'+esc(p.title)+'</h1><p class="lead">'+esc(p.short)+'</p>'+
+      '<div class="tags">'+tags(p.tags)+'</div>'+
+      '<div class="actions"><button class="btn primary" type="button" data-jump="deck">View slides ↓</button><a class="btn secondary" href="decks/'+p.slug+'.pdf" target="_blank" rel="noopener noreferrer">Open original PDF ↗</a></div>'+
+      '</div></section>'+
+      '<section class="section" style="padding-top:8px"><div class="wrap caseLayout">'+
+      '<aside class="caseAside" aria-label="Case study sections">'+SECTIONS.map(function(s){return '<button type="button" data-jump="'+s[0]+'">'+s[1]+'</button>';}).join('')+'</aside>'+
+      '<div>'+
+      '<section class="caseSection" id="c-overview"><div class="eyebrow">01 · Overview</div><h2>The brief</h2><p>'+esc(p.overview)+'</p></section>'+
+      '<section class="caseSection" id="c-problem"><div class="eyebrow">02 · Problem</div><h2>What needs to change?</h2><p>'+esc(p.problem)+'</p></section>'+
+      '<section class="caseSection" id="c-approach"><div class="eyebrow">03 · Approach</div><h2>How I worked through it</h2>'+list(p.approach)+'</section>'+
+      '<section class="caseSection" id="c-insight"><div class="eyebrow">04 · Key insight</div><div class="callout">'+esc(p.insight)+'</div></section>'+
+      '<section class="caseSection" id="c-solution"><div class="eyebrow">05 · Recommendation</div>'+solutionBody+'</section>'+
+      '<section class="caseSection" id="c-measure"><div class="eyebrow">06 · Measurement</div>'+measureBody+'</section>'+
+      '<section class="caseSection" id="c-tradeoff"><div class="eyebrow">07 · Trade-offs &amp; risks</div><h2>The cost of the decision</h2><p>'+esc(p.tradeoff)+'</p></section>'+
+      '<section class="caseSection" id="c-deck"><div class="eyebrow">08 · Original deck</div><h2>Page through the slides</h2><p>Use the arrows, the thumbnails or your arrow keys. Open the PDF for the full-resolution file.</p>'+
+        '<div class="viewer"><div class="stage"><img id="stageImg" src="'+slide(p,1)+'" alt="Slide 1 of '+p.slides+'"></div>'+
+        '<div class="viewerBar"><div class="ctrls"><button class="ctrl" id="prevSlide" aria-label="Previous slide">←</button><button class="ctrl" id="nextSlide" aria-label="Next slide">→</button></div><span class="counter" id="slideCount">1 / '+p.slides+'</span><a class="textlink" href="decks/'+p.slug+'.pdf" target="_blank" rel="noopener noreferrer">Open PDF ↗</a></div>'+
+        '<div class="thumbs" id="thumbs">'+thumbs+'</div></div></section>'+
+      '<section class="caseSection"><div class="eyebrow">Continue exploring</div><div class="links">'+nextLink(p)+'<a class="textlink" href="#get-in-touch">Discuss an opportunity ↗</a></div></section>'+
+      '</div></div></section>';
+  }
+  function nextLink(p){var i=PROJECTS.indexOf(p),n=PROJECTS[(i+1)%PROJECTS.length];return '<a class="textlink" href="#'+n.slug+'">Next: '+esc(n.title)+' →</a>';}
+
+  // Slide viewer state
+  var current=null,slideN=1;
+  function showSlide(n){
+    if(!current)return;slideN=Math.max(1,Math.min(current.slides,n));
+    var img=document.getElementById('stageImg');img.src=slide(current,slideN);img.alt='Slide '+slideN+' of '+current.slides;
+    document.getElementById('slideCount').textContent=slideN+' / '+current.slides;
+    document.getElementById('prevSlide').disabled=slideN===1;document.getElementById('nextSlide').disabled=slideN===current.slides;
+    [].forEach.call(document.querySelectorAll('#thumbs .thumb'),function(t){var on=+t.dataset.n===slideN;t.setAttribute('aria-current',String(on));if(on)t.scrollIntoView({block:'nearest',inline:'nearest'});});
+  }
+
+  // Views: a page hash (#resume, #all-work, #get-in-touch), a case study (#slug), or a home section
+  var VIEWS={'resume':'resumeView','all-work':'allWorkView','get-in-touch':'contactView'};
+  var views=['homeView','caseView','resumeView','allWorkView','contactView'].map(function(id){return document.getElementById(id);});
+  var NAV={'work':'#work','all-work':'#work','approach':'#approach','experience':'#experience','about':'#about','resume':'#resume','get-in-touch':'#get-in-touch'};
+  function route(){
+    var h=location.hash.slice(1),p=PROJECTS.filter(function(x){return x.slug===h;})[0];
+    var active=p?'caseView':(VIEWS[h]||'homeView');
+    views.forEach(function(v){v.hidden=v.id!==active;});
+    var navHref=p?'#work':NAV[h];
+    links.querySelectorAll('a').forEach(function(a){if(a.getAttribute('href')===navHref)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+    if(p){
+      if(current!==p){current=p;caseView.innerHTML=caseHTML(p);showSlide(1);}
+    }else current=null;
+    // Smooth scroll only between sections of the home view; jump on load and on view changes
+    var behavior=lastView==='homeView'&&active==='homeView'?'smooth':'instant';
+    var t=active==='homeView'&&h&&h!=='home'&&document.getElementById(h);
+    if(t)t.scrollIntoView({behavior:behavior});else window.scrollTo({top:0,behavior:behavior});
+    lastView=active;
+  }
+  var lastView=null;
+  var caseView=document.getElementById('caseView'),links=document.getElementById('navLinks');
+  window.addEventListener('hashchange',route);route();
+  // Images above the target can change the layout after the first jump, so jump again once loaded
+  window.addEventListener('load',function(){var h=location.hash.slice(1),t=lastView==='homeView'&&h&&h!=='home'&&document.getElementById(h);if(t)t.scrollIntoView({behavior:'instant'});});
+
+  caseView.addEventListener('click',function(e){
+    var j=e.target.closest('[data-jump]');if(j){document.getElementById('c-'+j.dataset.jump).scrollIntoView({behavior:'smooth'});return;}
+    var t=e.target.closest('.thumb');if(t){showSlide(+t.dataset.n);return;}
+    if(e.target.closest('#prevSlide'))showSlide(slideN-1);
+    if(e.target.closest('#nextSlide'))showSlide(slideN+1);
+  });
+  document.addEventListener('keydown',function(e){
+    if(!current||/input|textarea/i.test(e.target.tagName))return;
+    if(e.key==='ArrowRight')showSlide(slideN+1);
+    if(e.key==='ArrowLeft')showSlide(slideN-1);
+  });
+
+  // Mobile menu
+  var btn=document.getElementById('menuBtn');
+  function setMenu(open){links.classList.toggle('open',open);btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Close navigation':'Open navigation');btn.textContent=open?'×':'☰';}
+  btn.addEventListener('click',function(){setMenu(!links.classList.contains('open'));});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&links.classList.contains('open')){setMenu(false);btn.focus();}});
+
+  // Filters
+  var filters=[].slice.call(document.querySelectorAll('#filters .filter'));
+  filters.forEach(function(f){f.addEventListener('click',function(){
+    var key=f.dataset.filter,cards=[].slice.call(document.querySelectorAll('#libraryGrid .project')),n=0;
+    filters.forEach(function(x){x.setAttribute('aria-pressed',String(x===f));});
+    cards.forEach(function(c){var show=key==='all'||c.dataset.cat.split(' ').indexOf(key)>-1;c.hidden=!show;if(show)n++;});
+    document.getElementById('resultCount').textContent='Showing '+n+' of '+cards.length+' projects';
+  });});
+
+  // Copy email
+  var copy=document.getElementById('copyEmail'),note=document.getElementById('copyNotice'),email=document.getElementById('emailText');
+  copy.addEventListener('click',function(){
+    var done=function(){note.textContent='Email address copied.';};
+    var fail=function(){var r=document.createRange();r.selectNodeContents(email);var s=getSelection();s.removeAllRanges();s.addRange(r);note.textContent='Copy is not available here. The address is selected, so press Ctrl+C or Cmd+C.';};
+    try{navigator.clipboard.writeText(email.textContent).then(done,fail);}catch(e){fail();}
+  });
+})();
+</script>
+</body>
+</html>
