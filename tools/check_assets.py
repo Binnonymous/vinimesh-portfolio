@@ -6,7 +6,9 @@ Usage: python3 tools/check_assets.py <base-url>
 
 Exit code 0 when every asset returns HTTP 200 with the expected content type, 1 otherwise.
 """
+import os
 import re
+import ssl
 import sys
 import urllib.error
 import urllib.parse
@@ -50,11 +52,25 @@ def expected_type(path):
     return None
 
 
+SYSTEM_CA_BUNDLE = "/etc/ssl/cert.pem"  # shipped with macOS
+
+
+def ssl_context():
+    """Default TLS context, falling back to the macOS CA bundle when Python has none."""
+    ctx = ssl.create_default_context()
+    if ctx.cert_store_stats()["x509_ca"] == 0 and os.path.exists(SYSTEM_CA_BUNDLE):
+        ctx.load_verify_locations(cafile=SYSTEM_CA_BUNDLE)
+    return ctx
+
+
+SSL_CONTEXT = ssl_context()
+
+
 def fetch(url):
     """Return (status, content_type) for a GET request, reading only the headers."""
     req = urllib.request.Request(url, headers={"User-Agent": "portfolio-asset-check"})
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=30, context=SSL_CONTEXT) as resp:
             return resp.status, resp.headers.get_content_type()
     except urllib.error.HTTPError as err:
         return err.code, None
@@ -69,7 +85,7 @@ def check(base):
     if status != 200:
         print("FAIL  page %s -> %s" % (base, status))
         return 1
-    with urllib.request.urlopen(base, timeout=30) as resp:
+    with urllib.request.urlopen(base, timeout=30, context=SSL_CONTEXT) as resp:
         html = resp.read().decode("utf-8")
 
     urls = {path: urllib.parse.urljoin(base, path) for path in sorted(extract_assets(html))}

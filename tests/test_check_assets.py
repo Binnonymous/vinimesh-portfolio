@@ -60,5 +60,13 @@ class ExpectedTypeTest(unittest.TestCase):
         self.assertEqual(check_assets.expected_type("index.html"), "text/html")
 
 
+class SslContextTest(unittest.TestCase):
+    def test_loads_trusted_ca_certificates(self):
+        # python.org builds on macOS ship without a CA bundle, so HTTPS checks
+        # of the live site failed with CERTIFICATE_VERIFY_FAILED.
+        ctx = check_assets.ssl_context()
+        self.assertGreater(ctx.cert_store_stats()["x509_ca"], 0)
+
+
 if __name__ == "__main__":
     unittest.main()
